@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Jogo da Velha</title>
+        <link rel="stylesheet" type="text/css" href="CSS/estilo.css"/>
+        <script type="text/javascript" src="JS/jscript.js"></script>
+    </head>
+    <body onload="recomecar()">
+        <div id="jogo">
+            <!--1a linha-->
+            <div class="linha">
+                <!--1a casa da 1a linha -->
+                <div class="casa" id="casa0" onclick="verificar(0)">
+                    <img src="" id="img0"/>
+                </div>
+                <!--2a casa da 1a linha -->
+                <div class="casa" id="casa1" onclick="verificar(1)">
+                    <img src="" id="img1"/>
+                </div>                
+                <!--3a casa da 1a linha -->
+                <div class="casa" id="casa2" onclick="verificar(2)">
+                    <img src="" id="img2"/>
+                </div>
+            </div>
+            
+            <!--2a linha-->
+            <div class="linha">
+                <!--1a casa da 2a linha -->
+                <div class="casa" id="casa3" onclick="verificar(3)">
+                    <img src="" id="img3"/>
+                </div>
+                <!--2a casa da 2a linha -->
+                <div class="casa" id="casa4" onclick="verificar(4)">
+                    <img src="" id="img4"/>
+                </div>                
+                <!--3a casa da 2a linha -->
+                <div class="casa" id="casa5" onclick="verificar(5)">
+                    <img src="" id="img5"/>
+                </div>
+            </div>
+            
+            <!--3a linha-->
+            <div class="linha">
+                <!--1a casa da 3a linha -->
+                <div class="casa" id="casa6" onclick="verificar(6)">
+                    <img src="" id="img6"/>
+                </div>
+                <!--2a casa da 3a linha -->
+                <div class="casa" id="casa7" onclick="verificar(7)">
+                    <img src="" id="img7"/>
+                </div>                
+                <!--3a casa da 3a linha -->
+                <div class="casa" id="casa8" onclick="verificar(8)">
+                    <img src="" id="img8"/>
+                </div>
+            </div>
+        </div>
+        <div id="resultado">
+            <p id="resposta">RESULTADO:</p>
+            <p id="xis"   class="placar">PONTOS X: 0</p>
+            <p id="bola"  class="placar">PONTOS O: 0</p>
+            <p id="velha" class="placar">VELHA...: 0</p>
+            <form>
+                <input type="button" value="NOVO JOGO" id="btnNovo" onclick="recomecar()"/>
+            </form>
+        </div>
+    </body>
+</html>
